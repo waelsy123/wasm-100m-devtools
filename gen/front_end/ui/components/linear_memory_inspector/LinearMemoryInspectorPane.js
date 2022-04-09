@@ -203,17 +203,21 @@ class LinearMemoryInspectorView extends UI.Widget.VBox {
           binaryString
         );
 
-        let buf = await binaryString.getRange(0, 1000 * 1000);
+        let buf = [];
+        let i = 0;
+
+        while (i < memLength) {
+          console.log(
+            "🚀 ~ file: LinearMemoryInspectorPane.js ~ line 210 ~ LinearMemoryInspectorView ~ fun ~ i",
+            i,
+            memLength
+          );
+          const newI = i + 1000 * 1000;
+          buf = [...buf, ...(await binaryString.getRange(i, newI))];
+          i = newI;
+        }
 
         saveByteArray(`dump-mem-${new Date().getTime()}`, buf);
-        // for (let i = 0; i < buf.length; i++) {
-        //   buf[i] = toHex(buf[i]);
-        // }
-
-        //   for (var i = 0; i < 4; i++) {
-        //     var ascii = binaryString.charCodeAt(i);
-        //     console.log(ascii);
-        //   }
       };
 
       fun();
