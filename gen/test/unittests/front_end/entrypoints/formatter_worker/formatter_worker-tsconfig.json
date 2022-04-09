@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "formatter_worker-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/CSSFormatter_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/EvaluatableJavaScriptSubstring_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/FormattedContentBuilder_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/HTMLFormatter_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/HTMLOutline_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/JSONFormatter_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/JavaScriptFormatter_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/JavaScriptOutline_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/SCSSFormatter_test.ts",
+    "../../../../../../../../test/unittests/front_end/entrypoints/formatter_worker/Substitute_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/entrypoints/formatter_worker/bundle-tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../test/conductor",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "implementation-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon",
+      "node"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../test/conductor/custom-query-handlers.ts",
+    "../../../../../test/conductor/events.ts",
+    "../../../../../test/conductor/frontend_tab.ts",
+    "../../../../../test/conductor/hooks.ts",
+    "../../../../../test/conductor/mocha_hooks.ts",
+    "../../../../../test/conductor/pool.ts",
+    "../../../../../test/conductor/puppeteer-state.ts",
+    "../../../../../test/conductor/target_tab.ts",
+    "../../../../../test/conductor/test_runner_config.ts",
+    "../../../../../test/conductor/test_server.ts",
+    "../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../node_modules/@types/filesystem/index.d.ts"
+  ]
+}

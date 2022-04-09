@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../test/e2e/sources",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "sources-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon",
+      "node"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../test/e2e/sources/breakpoint-csp-violations_test.ts",
+    "../../../../../../test/e2e/sources/breakpoint-javascript_test.ts",
+    "../../../../../../test/e2e/sources/can-break-with-wasm-sourcemaps_test.ts",
+    "../../../../../../test/e2e/sources/can-disable-auto-sources-focus_test.ts",
+    "../../../../../../test/e2e/sources/can-format-sourcecode_test.ts",
+    "../../../../../../test/e2e/sources/can-handle-special-characters_test.ts",
+    "../../../../../../test/e2e/sources/can-open-linear-memory-inspector_test.ts",
+    "../../../../../../test/e2e/sources/can-show-files-after-loading_test.ts",
+    "../../../../../../test/e2e/sources/can-show-multiple-workers_test.ts",
+    "../../../../../../test/e2e/sources/can-show-wasm-scopes_test.ts",
+    "../../../../../../test/e2e/sources/debug-raw-wasm_test.ts",
+    "../../../../../../test/e2e/sources/icon-row-bucket_test.ts",
+    "../../../../../../test/e2e/sources/link-to-correct-source-line_test.ts",
+    "../../../../../../test/e2e/sources/live-edit-moving-breakpoint_test.ts",
+    "../../../../../../test/e2e/sources/navigation_test.ts",
+    "../../../../../../test/e2e/sources/popover_test.ts",
+    "../../../../../../test/e2e/sources/script-in-multiple-workers_test.ts",
+    "../../../../../../test/e2e/sources/sourcemap-without-mappings_test.ts",
+    "../../../../../../test/e2e/sources/sourcemap_test.ts",
+    "../../../../../../test/e2e/sources/syntax-highlighting_test.ts",
+    "../../../../../../test/e2e/sources/worker-relative-sourcemap_test.ts",
+    "../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../extension-api/extension-api-tsconfig.json"
+    },
+    {
+      "path": "../../shared/shared-tsconfig.json"
+    },
+    {
+      "path": "../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../test/unittests/front_end/ui",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "ui-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../test/unittests/front_end/ui/Context_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/Fragment_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/Geometry_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/Icon_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/KeyboardShortcut_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/ListModel_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/ListWidget_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/ShortcutRegistry_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/Treeoutline-keyboard_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/UIUtils_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/ViewLocation_test.ts",
+    "../../../../../../../test/unittests/front_end/ui/utils/measured-scrollbar-width_test.ts",
+    "../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../front_end/core/platform/bundle-tsconfig.json"
+    },
+    {
+      "path": "../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

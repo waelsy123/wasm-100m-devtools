@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../test/e2e/helpers",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "helpers-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon",
+      "node"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../test/e2e/helpers/animations-helpers.ts",
+    "../../../../../../test/e2e/helpers/application-helpers.ts",
+    "../../../../../../test/e2e/helpers/changes-helpers.ts",
+    "../../../../../../test/e2e/helpers/console-helpers.ts",
+    "../../../../../../test/e2e/helpers/context-menu-helpers.ts",
+    "../../../../../../test/e2e/helpers/coverage-helpers.ts",
+    "../../../../../../test/e2e/helpers/cross-tool-helper.ts",
+    "../../../../../../test/e2e/helpers/css-overview-helpers.ts",
+    "../../../../../../test/e2e/helpers/datagrid-helpers.ts",
+    "../../../../../../test/e2e/helpers/elements-helpers.ts",
+    "../../../../../../test/e2e/helpers/emulation-helpers.ts",
+    "../../../../../../test/e2e/helpers/event-listeners-helpers.ts",
+    "../../../../../../test/e2e/helpers/extension-helpers.ts",
+    "../../../../../../test/e2e/helpers/issues-helpers.ts",
+    "../../../../../../test/e2e/helpers/layers-helpers.ts",
+    "../../../../../../test/e2e/helpers/lighthouse-helpers.ts",
+    "../../../../../../test/e2e/helpers/media-helpers.ts",
+    "../../../../../../test/e2e/helpers/memory-helpers.ts",
+    "../../../../../../test/e2e/helpers/network-helpers.ts",
+    "../../../../../../test/e2e/helpers/performance-helpers.ts",
+    "../../../../../../test/e2e/helpers/profiler-helpers.ts",
+    "../../../../../../test/e2e/helpers/quick_open-helpers.ts",
+    "../../../../../../test/e2e/helpers/search-helpers.ts",
+    "../../../../../../test/e2e/helpers/security-helpers.ts",
+    "../../../../../../test/e2e/helpers/sensors-helpers.ts",
+    "../../../../../../test/e2e/helpers/settings-helpers.ts",
+    "../../../../../../test/e2e/helpers/settings-shortcuts-helpers.ts",
+    "../../../../../../test/e2e/helpers/sources-helpers.ts",
+    "../../../../../../test/e2e/helpers/style-property-editor-helpers.ts",
+    "../../../../../../test/e2e/helpers/webaudio-helpers.ts",
+    "../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../shared/shared-tsconfig.json"
+    }
+  ]
+}

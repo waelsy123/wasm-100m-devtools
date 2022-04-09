@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../test/e2e/elements",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "elements-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon",
+      "node"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../test/e2e/elements/accessibility-pane_test.ts",
+    "../../../../../../test/e2e/elements/accessibility-tree_test.ts",
+    "../../../../../../test/e2e/elements/adornment_test.ts",
+    "../../../../../../test/e2e/elements/classes-pane_test.ts",
+    "../../../../../../test/e2e/elements/computed-pane-properties_test.ts",
+    "../../../../../../test/e2e/elements/element-breadcrumbs_test.ts",
+    "../../../../../../test/e2e/elements/flexbox-editor_test.ts",
+    "../../../../../../test/e2e/elements/grid-editor_test.ts",
+    "../../../../../../test/e2e/elements/isolation-mode_test.ts",
+    "../../../../../../test/e2e/elements/layout-pane_test.ts",
+    "../../../../../../test/e2e/elements/pseudo-states_test.ts",
+    "../../../../../../test/e2e/elements/reveal-correct-node_test.ts",
+    "../../../../../../test/e2e/elements/selection-after-delete_test.ts",
+    "../../../../../../test/e2e/elements/shadowroot-styles_test.ts",
+    "../../../../../../test/e2e/elements/sidebar-event-listeners-remove_test.ts",
+    "../../../../../../test/e2e/elements/sidebar-event-listeners_test.ts",
+    "../../../../../../test/e2e/elements/style-pane-properties_test.ts",
+    "../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../shared/shared-tsconfig.json"
+    },
+    {
+      "path": "../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../test/unittests/inspector_overlay",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "inspector_overlay-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../test/unittests/inspector_overlay/common_test.ts",
+    "../../../../../../test/unittests/inspector_overlay/css_grid_label_helpers_test.ts",
+    "../../../../../../test/unittests/inspector_overlay/highlight_common_test.ts",
+    "../../../../../../test/unittests/inspector_overlay/highlight_flex_common_test.ts",
+    "../../../../../../test/unittests/inspector_overlay/source_order_impl_helpers_test.ts",
+    "../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../inspector_overlay/inspector_overlay-tsconfig.json"
+    },
+    {
+      "path": "../front_end/helpers/helpers-tsconfig.json"
+    }
+  ]
+}

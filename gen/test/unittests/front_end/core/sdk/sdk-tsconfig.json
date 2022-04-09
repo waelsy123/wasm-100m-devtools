@@ -1,0 +1,78 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/core/sdk",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "sdk-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/core/sdk/AccessibilityModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/CSSContainerQuery_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/CSSPropertyParser_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/ConsoleModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/CookieModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/CookieParser_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/Cookie_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/DOMModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/DebuggerModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/FrameManager_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/NetworkManager_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/OverlayColorGenerator_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/OverlayPersistentHighlighter_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/PageResourceLoader_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/RemoteObject_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/ResourceTreeModel_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/ServerTiming_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/SourceMap_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/sdk/TracingModel_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/core/common/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/core/protocol_client/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/core/sdk/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/generated/protocol-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

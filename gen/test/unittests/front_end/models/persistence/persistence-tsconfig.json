@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/models/persistence",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "persistence-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/models/persistence/NetworkPersistenceManager_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/persistence/PlatformFileSystem_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/core/platform/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/core/sdk/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/models/persistence/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

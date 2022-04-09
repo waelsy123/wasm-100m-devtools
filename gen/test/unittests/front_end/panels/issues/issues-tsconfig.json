@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/panels/issues",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "issues-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/panels/issues/DeprecationIssue_test.ts",
+    "../../../../../../../../test/unittests/front_end/panels/issues/GenericIssue_test.ts",
+    "../../../../../../../../test/unittests/front_end/panels/issues/IssueAggregator_test.ts",
+    "../../../../../../../../test/unittests/front_end/panels/issues/IssueView_test.ts",
+    "../../../../../../../../test/unittests/front_end/panels/issues/LowContrastIssuesAggregation_test.ts",
+    "../../../../../../../../test/unittests/front_end/panels/issues/TrustedWebActivityIssuesAggregation_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/core/common/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/core/host/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/core/sdk/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/issues/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../core/sdk/sdk-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    },
+    {
+      "path": "../../models/issues_manager/issues_manager-tsconfig.json"
+    }
+  ]
+}

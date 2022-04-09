@@ -1,0 +1,112 @@
+"use strict";
+// Copyright 2021 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+Object.defineProperty(exports, "__esModule", { value: true });
+const chai_1 = require("chai");
+const helper_js_1 = require("../../shared/helper.js");
+const mocha_extensions_js_1 = require("../../shared/mocha-extensions.js");
+const issues_helpers_js_1 = require("../helpers/issues-helpers.js");
+(0, mocha_extensions_js_1.describe)('Hide issues row', async () => {
+    (0, mocha_extensions_js_1.it)('should be visible after hiding an issue', async () => {
+        await (0, helper_js_1.goToResource)('issues/cross-origin-portal-post.html');
+        await (0, issues_helpers_js_1.navigateToIssuesTab)();
+        const issueTitle = 'Cross-origin portal post messages are blocked on your site';
+        const issueHeader = await (0, issues_helpers_js_1.getIssueHeaderByTitle)(issueTitle);
+        (0, helper_js_1.assertNotNullOrUndefined)(issueHeader);
+        await issueHeader.hover();
+        const hideIssuesMenuBtn = await (0, issues_helpers_js_1.getHideIssuesMenu)();
+        await hideIssuesMenuBtn.click();
+        const menuItem = await (0, issues_helpers_js_1.getHideIssuesMenuItem)();
+        (0, helper_js_1.assertNotNullOrUndefined)(menuItem);
+        await menuItem.click();
+        await (0, helper_js_1.waitFor)('.hidden-issue');
+        const hiddenIssuesRow = await (0, issues_helpers_js_1.getHiddenIssuesRow)();
+        const isHidden = await hiddenIssuesRow?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+    });
+    (0, mocha_extensions_js_1.it)('should expand after clicking', async () => {
+        await (0, helper_js_1.goToResource)('issues/cross-origin-portal-post.html');
+        await (0, issues_helpers_js_1.navigateToIssuesTab)();
+        const issueTitle = 'Cross-origin portal post messages are blocked on your site';
+        const issueHeader = await (0, issues_helpers_js_1.getIssueHeaderByTitle)(issueTitle);
+        (0, helper_js_1.assertNotNullOrUndefined)(issueHeader);
+        await issueHeader.hover();
+        const hideIssuesMenuBtn = await (0, issues_helpers_js_1.getHideIssuesMenu)();
+        await hideIssuesMenuBtn.click();
+        const menuItem = await (0, issues_helpers_js_1.getHideIssuesMenuItem)();
+        (0, helper_js_1.assertNotNullOrUndefined)(menuItem);
+        await menuItem.click();
+        const hiddenIssuesRow = await (0, issues_helpers_js_1.getHiddenIssuesRow)();
+        let isHidden = await hiddenIssuesRow?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+        await hiddenIssuesRow?.click();
+        const hiddenIssuesRowBody = await (0, issues_helpers_js_1.getHiddenIssuesRowBody)();
+        isHidden = await hiddenIssuesRowBody?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+        const classes = await hiddenIssuesRow?.evaluate(node => node.classList.toString());
+        chai_1.assert.include(classes, 'expanded');
+    });
+    (0, mocha_extensions_js_1.it)('should contain issue after clicking', async () => {
+        await (0, helper_js_1.goToResource)('issues/cross-origin-portal-post.html');
+        await (0, issues_helpers_js_1.navigateToIssuesTab)();
+        const issueTitle = 'Cross-origin portal post messages are blocked on your site';
+        const issueHeader = await (0, issues_helpers_js_1.getIssueHeaderByTitle)(issueTitle);
+        (0, helper_js_1.assertNotNullOrUndefined)(issueHeader);
+        await issueHeader.hover();
+        const hideIssuesMenuBtn = await (0, issues_helpers_js_1.getHideIssuesMenu)();
+        await hideIssuesMenuBtn.click();
+        const menuItem = await (0, issues_helpers_js_1.getHideIssuesMenuItem)();
+        (0, helper_js_1.assertNotNullOrUndefined)(menuItem);
+        await menuItem.click();
+        await (0, helper_js_1.waitFor)('.hidden-issue');
+        const hiddenIssuesRow = await (0, issues_helpers_js_1.getHiddenIssuesRow)();
+        let isHidden = await hiddenIssuesRow?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+        await hiddenIssuesRow?.click();
+        const hiddenIssuesRowBody = await (0, issues_helpers_js_1.getHiddenIssuesRowBody)();
+        isHidden = await hiddenIssuesRowBody?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+        const firstChild = await hiddenIssuesRowBody?.$eval('.issue', node => node.classList.toString());
+        (0, helper_js_1.assertNotNullOrUndefined)(firstChild);
+        chai_1.assert.include(firstChild, 'hidden-issue');
+    });
+    (0, mocha_extensions_js_1.it)('should contain Unhide all issues button', async () => {
+        await (0, helper_js_1.goToResource)('issues/cross-origin-portal-post.html');
+        await (0, issues_helpers_js_1.navigateToIssuesTab)();
+        const issueTitle = 'Cross-origin portal post messages are blocked on your site';
+        const issueHeader = await (0, issues_helpers_js_1.getIssueHeaderByTitle)(issueTitle);
+        (0, helper_js_1.assertNotNullOrUndefined)(issueHeader);
+        await issueHeader.hover();
+        const hideIssuesMenuBtn = await (0, issues_helpers_js_1.getHideIssuesMenu)();
+        await hideIssuesMenuBtn.click();
+        const menuItem = await (0, issues_helpers_js_1.getHideIssuesMenuItem)();
+        (0, helper_js_1.assertNotNullOrUndefined)(menuItem);
+        await menuItem.click();
+        const hiddenIssuesRow = await (0, issues_helpers_js_1.getHiddenIssuesRow)();
+        const isHidden = await hiddenIssuesRow?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isFalse(isHidden);
+        const hasUnhideAllIssuesBtn = await hiddenIssuesRow?.evaluate(node => node.lastElementChild?.lastElementChild?.classList.contains('unhide-all-issues-button'));
+        chai_1.assert.isTrue(hasUnhideAllIssuesBtn);
+    });
+    (0, mocha_extensions_js_1.it)('should get hidden and unhide all issues upon clicking unhide all issues button', async () => {
+        await (0, helper_js_1.goToResource)('issues/cross-origin-portal-post.html');
+        await (0, issues_helpers_js_1.navigateToIssuesTab)();
+        const issueTitle = 'Cross-origin portal post messages are blocked on your site';
+        const issueHeader = await (0, issues_helpers_js_1.getIssueHeaderByTitle)(issueTitle);
+        (0, helper_js_1.assertNotNullOrUndefined)(issueHeader);
+        await issueHeader.hover();
+        const hideIssuesMenuBtn = await (0, issues_helpers_js_1.getHideIssuesMenu)();
+        await hideIssuesMenuBtn.click();
+        const menuItem = await (0, issues_helpers_js_1.getHideIssuesMenuItem)();
+        (0, helper_js_1.assertNotNullOrUndefined)(menuItem);
+        await menuItem.click();
+        const unhideAllIssuesbtn = await (0, helper_js_1.waitFor)('.unhide-all-issues-button');
+        await unhideAllIssuesbtn.click();
+        const hiddenIssuesRow = await (0, issues_helpers_js_1.getHiddenIssuesRow)();
+        const isHidden = await hiddenIssuesRow?.evaluate(node => node.classList.contains('hidden'));
+        chai_1.assert.isTrue(isHidden);
+        await (0, helper_js_1.waitFor)(issues_helpers_js_1.ISSUE);
+    });
+});
+//# sourceMappingURL=hidden-issues-row_test.js.map

@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/models/issues_manager",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "issues_manager-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/AttributionReportingIssue_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/IssueResolver_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/Issue_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/IssuesManager_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/MarkdownIssueDescription_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/MockIssuesManager.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/MockIssuesModel.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/RelatedIssue_test.ts",
+    "../../../../../../../../test/unittests/front_end/models/issues_manager/StubIssue.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/models/issues_manager/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../core/common/common-tsconfig.json"
+    },
+    {
+      "path": "../../core/sdk/sdk-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

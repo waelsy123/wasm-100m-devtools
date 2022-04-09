@@ -1,0 +1,123 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/entrypoints/missing_entrypoints",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "missing_entrypoints-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/entrypoints/missing_entrypoints/missing_entrypoints_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/entrypoints/heap_snapshot_worker/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/entrypoints/inspector_main/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/entrypoints/main/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/entrypoints/wasmparser_worker/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/models/heap_snapshot_model/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/models/javascript_metadata/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/application/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/browser_debugger/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/changes/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/console/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/console_counters/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/css_overview/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/developer_resources/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/input/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/layer_viewer/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/layers/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/lighthouse/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/performance_monitor/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/profiler/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/protocol_monitor/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/screencast/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/security/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/settings/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/web_audio/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/panels/webauthn/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

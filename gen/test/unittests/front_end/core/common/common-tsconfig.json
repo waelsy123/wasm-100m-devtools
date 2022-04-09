@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/core/common",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "common-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/core/common/Base64_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/CharacterIdMap_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/ColorUtils_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Color_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Console_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Debouncer_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/EventTarget_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Lazy_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Object_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/ParsedURL_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Progress_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/ResolverBase_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/ResourceType_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/SegmentedRange_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Settings_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/SimpleHistoryManager_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/StringOutputStream_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/TextDictionary_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Throttler_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/Trie_test.ts",
+    "../../../../../../../../test/unittests/front_end/core/common/WasmDisassembly_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/core/common/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    }
+  ]
+}

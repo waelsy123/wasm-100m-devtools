@@ -1,0 +1,113 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../../../../test/unittests/front_end/ui/components",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "components-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../../../../test/unittests/front_end/ui/components/ChromeLink_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/CodeHighlighter_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/DataGridController_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/DataGridHelpers.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/DataGrid_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/ExpandableList_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/IconButton_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/Linkifier_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/MarkdownImage_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/MarkdownLink_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/MarkdownView_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/ReportView_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/SurveyLink_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/TextPrompt_test.ts",
+    "../../../../../../../../test/unittests/front_end/ui/components/TreeOutline_test.ts",
+    "../../../../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../../../front_end/core/platform/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/third_party/marked/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/chrome_link/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/code_highlighter/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/data_grid/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/expandable_list/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/linkifier/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/markdown_view/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/render_coordinator/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/report_view/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/survey_link/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/text_prompt/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/components/tree_outline/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../../../../front_end/ui/lit-html/bundle-tsconfig.json"
+    },
+    {
+      "path": "../../helpers/helpers-tsconfig.json"
+    },
+    {
+      "path": "buttons/buttons-tsconfig.json"
+    },
+    {
+      "path": "text_editor/text_editor-tsconfig.json"
+    },
+    {
+      "path": "panel_feedback/panel_feedback-tsconfig.json"
+    }
+  ]
+}

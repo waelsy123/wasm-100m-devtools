@@ -1,0 +1,139 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "composite": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "rootDir": "../../../../../test/e2e",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "tsBuildInfoFile": "tests-tsconfig.json.tsbuildinfo",
+    "typeRoots": [
+      "../../../../../node_modules/@types"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "sinon",
+      "karma-chai-sinon",
+      "node"
+    ],
+    "useUnknownInCatchVariables": false
+  },
+  "files": [
+    "../../../../../front_end/legacy/legacy-defs.d.ts",
+    "../../../../../front_end/global_typings/global_defs.d.ts",
+    "../../../../../front_end/global_typings/request_idle_callback.d.ts",
+    "../../../../../node_modules/@types/filesystem/index.d.ts"
+  ],
+  "references": [
+    {
+      "path": "animations/animations-tsconfig.json"
+    },
+    {
+      "path": "application/application-tsconfig.json"
+    },
+    {
+      "path": "assertion/assertion-tsconfig.json"
+    },
+    {
+      "path": "changes/changes-tsconfig.json"
+    },
+    {
+      "path": "console/console-tsconfig.json"
+    },
+    {
+      "path": "coverage/coverage-tsconfig.json"
+    },
+    {
+      "path": "cross_tool_integration/cross_tool_integration-tsconfig.json"
+    },
+    {
+      "path": "css_overview/css_overview-tsconfig.json"
+    },
+    {
+      "path": "elements/elements-tsconfig.json"
+    },
+    {
+      "path": "emulation/emulation-tsconfig.json"
+    },
+    {
+      "path": "extensions/extensions-tsconfig.json"
+    },
+    {
+      "path": "host/host-tsconfig.json"
+    },
+    {
+      "path": "i18n/i18n-tsconfig.json"
+    },
+    {
+      "path": "inline_editor/inline_editor-tsconfig.json"
+    },
+    {
+      "path": "issues/issues-tsconfig.json"
+    },
+    {
+      "path": "layers/layers-tsconfig.json"
+    },
+    {
+      "path": "lighthouse/lighthouse-tsconfig.json"
+    },
+    {
+      "path": "media/media-tsconfig.json"
+    },
+    {
+      "path": "memory/memory-tsconfig.json"
+    },
+    {
+      "path": "network/network-tsconfig.json"
+    },
+    {
+      "path": "performance/performance-tsconfig.json"
+    },
+    {
+      "path": "profiler/profiler-tsconfig.json"
+    },
+    {
+      "path": "quick_open/quick_open-tsconfig.json"
+    },
+    {
+      "path": "rendering/rendering-tsconfig.json"
+    },
+    {
+      "path": "search/search-tsconfig.json"
+    },
+    {
+      "path": "security/security-tsconfig.json"
+    },
+    {
+      "path": "sensors/sensors-tsconfig.json"
+    },
+    {
+      "path": "settings/settings-tsconfig.json"
+    },
+    {
+      "path": "snippets/snippets-tsconfig.json"
+    },
+    {
+      "path": "sources/sources-tsconfig.json"
+    },
+    {
+      "path": "webaudio/webaudio-tsconfig.json"
+    }
+  ]
+}

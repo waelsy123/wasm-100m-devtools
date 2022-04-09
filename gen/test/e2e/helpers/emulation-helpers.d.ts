@@ -1,0 +1,16 @@
+import type * as puppeteer from 'puppeteer';
+export declare const reloadDockableFrontEnd: () => Promise<void>;
+export declare const openDeviceToolbar: () => Promise<void>;
+export declare const showMediaQueryInspector: () => Promise<void>;
+export declare const startEmulationWithDualScreenFlag: () => Promise<void>;
+export declare const getButtonDisabled: (spanButton: puppeteer.ElementHandle<HTMLButtonElement>) => Promise<boolean>;
+export declare const clickDevicesDropDown: () => Promise<void>;
+export declare const clickZoomDropDown: () => Promise<void>;
+export declare const selectToggleButton: () => Promise<puppeteer.ElementHandle<HTMLButtonElement>>;
+export declare const selectEdit: () => Promise<void>;
+export declare const selectDevice: (name: string) => Promise<void>;
+export declare const selectTestDevice: () => Promise<void>;
+export declare const selectDualScreen: () => Promise<void>;
+export declare const clickToggleButton: () => Promise<void>;
+export declare const getWidthOfDevice: () => Promise<string>;
+export declare const selectNonDualScreenDevice: () => Promise<void>;
