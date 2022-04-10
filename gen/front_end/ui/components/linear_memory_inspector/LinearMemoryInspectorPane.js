@@ -208,12 +208,13 @@ class LinearMemoryInspectorView extends UI.Widget.VBox {
 
         while (i < memLength) {
           console.log(
-            "🚀 ~ file: LinearMemoryInspectorPane.js ~ line 210 ~ LinearMemoryInspectorView ~ fun ~ i",
-            i,
-            memLength
+            `🚀 ~ file: LinearMemoryInspectorPane.js ~ line 210 ~ ${i} / ${memLength}`
           );
-          const newI = i + 1000 * 1000;
-          buf = [...buf, ...(await binaryString.getRange(i, newI))];
+          const newI = i + 10 * 1000 * 1000;
+          buf = new Uint8Array([
+            ...buf,
+            ...(await binaryString.getRange(i, newI)),
+          ]);
           i = newI;
         }
 
